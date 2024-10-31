@@ -9,7 +9,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
+  <!-- Favicons Icon of tab -->
   <link href="assets/img/tools-and-utensils.png" rel="icon">
   <link href="assets/img/tools-and-utensils.png" rel="icon">
 
@@ -25,6 +25,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -33,6 +34,20 @@
   <!-- =======================================================
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+  publicKey: "NlKyNy5l7MXIhWU7k",
+});
+})();
+</script>
+<script src="https://cdn.rawgit.com/micku7zu/vanilla-tilt.js/master/dist/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </head>
 
 <body>
@@ -45,11 +60,11 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/ALE_9892.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/profilo.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Gaetano Roberto</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="#" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/gaetano-roberto-354b65239/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/GaetanoRoberto" class="github" target="_blank"><i class="bx bxl-github"></i></a>
         </div>
       </div>
 
@@ -60,11 +75,12 @@
           <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-laptop"></i> <span>Skills</span></a></li>
           <li><a href="#education" class="nav-link scrollto"><i class="bi bi-mortarboard"></i>
               <span>Education</span></a></li>
-
-          <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Projects</span></a></li>
           <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i>
               <span>Experience</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact Me</span></a></li>
+          <li><a href="#Portfolio" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Projects</span></a>
+          </li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact Me</span></a>
+          </li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -126,184 +142,209 @@
     <!-- ======= Skills Section ======= -->
     <section class="skills" id="skills">
       <h2 class="heading"><i class="bi bi-laptop"></i> Skills & <span>Abilities</span></h2>
-  
+
       <div class="container">
-          <div class="row" id="skillsContainer">
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png"/>
-                <span>HTML</span>
-              </div>
+        <div class="row" id="skillsContainer">
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" />
+              <span>HTML</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/css3.png"/>
-                <span>CSS</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/css3.png" />
+              <span>CSS</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/offices/48/000000/php-logo.png"/>
-                <span>PHP</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/offices/48/000000/php-logo.png" />
+              <span>PHP</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png"/>
-                <span>JavaScript</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
+              <span>JavaScript</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"/>
-                <span>Java</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" />
+              <span>Java</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/kotlin.png"/>
-                <span>Kotlin</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/kotlin.png" />
+              <span>Kotlin</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/python--v1.png"/>
-                <span>Python</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/python--v1.png" />
+              <span>Python</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/c-programming.png"/>
-                <span>C</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/c-programming.png" />
+              <span>C</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="assets/img/icons/rust.png"/>
-                <span>Rust</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="assets/img/icons/rust.png" />
+              <span>Rust</span>
             </div>
-            <!-- <div class="bar">
+          </div>
+          <!-- <div class="bar">
+            <div class="info">
+              <img src="assets/img/icons/flutter.png" />
+              <span>Flutter</span>
+            </div>
+          </div> -->
+          <!-- <div class="bar">
               <div class="info">
                 <img src="https://img.icons8.com/?size=100&id=gVK745a4Vaur&format=png&color=000000"/>
                 <span>Assembly</span>
               </div>
             </div> -->
-            <div class="bar">
-              <div class="info">
-                <img src="assets/img/icons/sql.png"/>
-                <span>SQL</span>
-              </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000" />
+              <span>Spring</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"/>
-                <span>ReactJS</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000" />
+              <span>Docker</span>
             </div>
-            <!-- <div class="bar">
+          </div>
+          <!-- <div class="bar">
+              <div class="info">
+                <img src="assets/img/icons/jet.png"/>
+                <span>Jetpack Compose</span>
+              </div>
+            </div> -->
+          <div class="bar">
+            <div class="info">
+              <img src="assets/img/icons/sql.png" />
+              <span>SQL</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img
+                src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png" />
+              <span>ReactJS</span>
+            </div>
+          </div>
+          <!-- <div class="bar">
               <div class="info">
                 <img src="assets/img/icons/reactbootstrap.png"/>
                 <span >React Bootstrap</span>
               </div>
             </div> -->
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/bootstrap.png"/>
-                <span>Bootstrap</span>
-              </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/bootstrap.png" />
+              <span>Bootstrap</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/fluency/48/000000/node-js.png"/>
-                <span>ExpressJS</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/fluency/48/000000/node-js.png" />
+              <span>ExpressJS</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/nodejs.png"/>
-                <span>NodeJS</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/nodejs.png" />
+              <span>NodeJS</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/fluency/48/000000/android-os.png"/>
-                <span>Android</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/fluency/48/000000/android-os.png" />
+              <span>Android</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/firebase.png"/>
-                <span>Firebase</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/firebase.png" />
+              <span>Firebase</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/numpy.png"/>
-                <span>NumPy</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/numpy.png" />
+              <span>NumPy</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/tensorflow.png"/>
-                <span>TensorFlow</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/tensorflow.png" />
+              <span>TensorFlow</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/?size=100&id=jH4BpkMnRrU5&format=png&color=000000"/>
-                <span>PyTorch</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/?size=100&id=jH4BpkMnRrU5&format=png&color=000000" />
+              <span>PyTorch</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/mongodb.png"/>
-                <span>MongoDB</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/mongodb.png" />
+              <span>MongoDB</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/mysql-logo.png"/>
-                <span>MySQL</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" />
+              <span>MySQL</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/postgreesql.png"/>
-                <span>PostgreSQL</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/postgreesql.png" />
+              <span>PostgreSQL</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/wordpress.png"/>
-                <span>WordPress</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/wordpress.png" />
+              <span>WordPress</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/git.png"/>
-                <span>Git</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/git.png" />
+              <span>Git</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/glyph-neue/48/ffffff/github.png"/>
-                <span>GitHub</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/glyph-neue/48/ffffff/github.png" />
+              <span>GitHub</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/gitlab.png"/>
-                <span>GitLab</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="https://img.icons8.com/color/48/000000/gitlab.png" />
+              <span>GitLab</span>
             </div>
-            <div class="bar">
-              <div class="info">
-                <img src="assets/img/icons/vscode.png"/>
-                <span>VS Code</span>
-              </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img src="assets/img/icons/vscode.png" />
+              <span>VS Code</span>
             </div>
-            <div class="bar">
+          </div>
+          <!-- <div class="bar">
               <div class="info">
                 <img src="assets/img/icons/nb.png"/>
                 <span>NetBeans</span>
@@ -314,8 +355,8 @@
                 <img src="assets/img/icons/clion.png"/>
                 <span>CLion</span>
               </div>
-            </div>
-            <!-- <div class="bar">
+            </div> -->
+          <!-- <div class="bar">
               <div class="info">
                 <img src="assets/img/icons/zerynth.png"/>
                 <span>Zerynth</span>
@@ -327,25 +368,21 @@
                 <span>Xilinx</span>
               </div>
             </div> -->
-            <div class="bar">
-              <div class="info">
-                <img src="assets/img/icons/office.png"/>
-                <span>Office</span>
-              </div>
+          <div class="bar">
+            <div class="info">
+              <img src="assets/img/icons/office.png" />
+              <span>Office</span>
             </div>
-            <!-- <div class="bar">
+          </div>
+          <!-- <div class="bar">
               <div class="info">
                 <img src="assets/img/icons/vhdl.png"/>
                 <span>VHDL</span>
               </div>
             </div> -->
-                      </div>
+        </div>
       </div>
-  </section>
-
-  
-
-
+    </section>
 
     <!-- education section starts -->
     <section class="education" id="education">
@@ -354,8 +391,18 @@
       <h5 class="quote-author text-center">(Albert Einstein)</h5>
 
       <div class="box-container">
+        <div class="box" onclick="window.open('https://www.iisdavincisapri.edu.it/', '_blank');" style="cursor: pointer;">
+          <div class="image">
+            <img draggable="false" src="./assets/img/its.jpg" alt="">
+          </div>
+          <div class="content">
+            <h3>Diploma Administration, Finance And Marketing</h3>
+            <p> Istituto Istruzione Superiore L. Da Vinci</p>
+            <h4>2014-2019 | Completed</h4>
+          </div>
+        </div>
 
-        <div class="box">
+        <div class="box" onclick="window.open('https://www.unisa.it/', '_blank');" style="cursor: pointer;">
           <div class="image">
             <img draggable="false" src="./assets/img/unisa.jpg" alt="">
           </div>
@@ -366,7 +413,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" onclick="window.open('https://www.polito.it/', '_blank');" style="cursor: pointer;">
           <div class="image">
             <img draggable="false" src="./assets/img/polito.jpg" alt="">
           </div>
@@ -380,532 +427,366 @@
       </div>
     </section>
     <!-- education section ends -->
-  
-         <!-- ======= Portfolio Section ======= -->
-    <section id="Portfolio" class="portfolio section-bg">
-      <div class="container">
 
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+    <!-- experience section starts -->
+
+    <section id="experience" class="experience">
+
+      <h2 class="heading"><i class="bi bi-briefcase"></i> Experience </h2>
+
+      <div class="timeline">
+        <div class="container right">
+          <div class="content">
+            <div class="tag">
+              <h4><strong>Accounting Firm <br>Dra. Paola Cetrangolo</strong>
+                <a target="_blank" href="https://www.google.com/search?q=Cetrangolo+Paola%0D%0A&sca_esv=dd78f9e0c8abb7cb&rlz=1C1VDKB_itIT1022IT1022&sxsrf=ADLYWIJpglvRN7Rq7dm3htA5Ts7V53fhSw%3A1730371263242&ei=v14jZ5-EDqT97_UP2faWkAg&ved=0ahUKEwjf3-Wjt7iJAxWk_rsIHVm7BYIQ4dUDCBA&uact=5&oq=Cetrangolo+Paola%0D%0A&gs_lp=Egxnd3Mtd2l6LXNlcnAiEUNldHJhbmdvbG8gUGFvbGEKMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHSP4FUKQDWKQDcAN4AZABAJgBAKABAKoBALgBA8gBAPgBAvgBAZgCA6ACEJgDAIgGAZAGCJIHATOgBwA&sclient=gws-wiz-serp"><i class="bi bi-box-arrow-up-right"></i></a>
+              </h4>
+            </div>
+            <div class="desc">
+              <h5>Accounting assistant</h5>
+              <p>February 2017 - July 2017</p>
+            </div>
+          </div>
         </div>
+
+        <div class="container left">
+          <div class="content">
+            <div class="tag">
+              <h4><strong>Bit Milan </strong>
+                <a href="https://bit.fieramilano.it/en/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+              </h4>
+            </div>
+            <div class="desc">
+              <h5>Tourist Promoter Fair - Cicas Tourism</h5>
+              <p>February 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container right">
+          <div class="content">
+            <div class="tag">
+              <h4><strong>West Sud S.r.l.</strong>
+                <a href="https://westsud.com/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+              </h4>
+            </div>
+            <div class="desc">
+              <h5>Developer | Company Internship</h5>
+              <p>April 2022 - September 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="morebtn">
+          <div class="button"><span>Today</span>
+            <!-- <i class="bi bi-arrow-right"></i> -->
+          </div>
+        </div>
+        <!-- <div class="morebtn">
+        <a href="/experience" class="btn"><span>View All</span>
+          <i class="bi bi-arrow-right"></i>
+        </a>
+      </div> -->
+
+      </div>
+
+    </section>
+    <!-- End experience Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="Portfolio" class="portfolio section-bg">
+
+      <div class="container">
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-software">Software</li>
               <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-embedded">Embedded</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div  class="col-lg-4 col-md-6 portfolio-item filter-embedded tilt">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/Tamagotchi.png"  class="img-fluid tilt" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/projects/Tamagotchi.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox" title="Computer architecture course project, which involves the implementation of a Tamagotchi in C programming language, using the Keil µVision IDE, and deployed on Landtiger Board. The project involved the implementation of the gui and the commands to interact with the Tamagotchi, then the implementation of the audio part with volume adjustment."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Tamagotchi-LANDTIGER-Board" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-embedded tilt">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/bin.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/projects/bin.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox" title="The prototype is a waste bin which provides data such as waste level and weather data such as temperature and humidity, which can be retrieved from the network. The main objective is that when the level of filling of the basket is maximum, this sends a notification to the netturers in charge of emptying.So the place will remain in optimal conditions for the flora, fauna and tourists"><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/IoT-Bin/tree/main" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div  class="col-lg-4 col-md-6 portfolio-item filter-web tilt">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/casale.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/projects/casale.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox" title="Website of a bed and breakfast. It allows the display of main information and the reservation of rooms. It is done using Wordpress."><i class="fas fa-eye"></i> View</a>
+                <a href="https://www.ilcasaledelbarone.it/" class="btn" target="_blank">Website <i class="fas fa-code"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-software tilt">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/se.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/projects/se.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="Project of the Software Engineering course, made by a group of 4 people in Javascript with the VsCode IDE on the GitLab platform. The project included a first phase of adding/modifying some features in a partial implementation of an application to manage expenses (EzWallet). Then there was a phase of testing of the implemented features, both with unit test and integration test. The project was finally put on docker to test its functionality in a preconfigured environment."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Software-Engineering/tree/main" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app tilt">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/uniteam.png"  class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/projects/uniteam.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="Project of the Mobile Application Development course, made in Kotlin with the AndroidStudio IDE. The goal was to create a teamwork management app, designed to facilitate collaboration, communication, and coordination among team members to enhance users' overall productivity and efficiency. The project was made by leveraging also on the Jetpack Compose framework and by using Firebase as backend service to store and retrieve data.
+                 "><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Uniteam-MobileApp" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web tilt">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/wa1.png" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/projects/wa1.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="Project of the Web Application 1 course, made in javascript with the VsCode IDE. The goal of the project is to design and implement a web application to manage a small content management system (CMS). The project was made with the React framework, using React Bootstrap for styling and NodeJs as runtime environment. See Below for the Project Technical Description."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Web-Application-1" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-software tilt ">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/1.jpg"  class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/projects/ml.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="Project of the Machine Learning and Pattern Recognition course, made in <a href='https://www.python.org/' target='_blank'>Python</a> with the <a href='https://code.visualstudio.com/' target='_blank'>VsCode</a> IDE. The goal of the project is the development of a classifier to detect whether a fingerprint image represents an authentic fingerprint or a spoofed fingerprint, i.e., a fingerprint image obtained by cloning, possibly with different methods, the fingerprint of an individual. In the project have been considered different working priors, implemented and employed different classifiers (Gaussian, Logistic Regression, SVM, GMM, Fused Models), in order to choose the best one."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Machine-Learning/tree/main" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-software tilt">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/rust.png"  class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/projects/rust.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="Project of the System and device programming course, made by a group of 3 people in Rust with the CLion IDE, using the Druid UI toolkit. The goal of the project is the development of a Multi-platform screen-grabbing utility capable of acquiring what is currently shown in a display, post-process it and make it available in one or more formats."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Multi-platform-screen-grabbing-Rust-" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web tilt">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="assets/img/projects/dinterest.png"  class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/projects/dinterest.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="The project is a website for social sharing of photos, made using javascript, html, css and php. The main features required for a website in this context are generally: ability to publish content, search by topic, save images in your profile, Interact with other users by exchanging comments and feedback on the content posted, display a personalized feed of photos according to the user’s tastes."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Dinterest-WebSite-" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
               </div>
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app tilt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/hci.png"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/projects/hci.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="Project of the Human Computer Interaction course, made in javascript with the VsCode IDE.
+                 The goal of the project (called GLUTEN-HUB) is to design and implement an application to allow celiacs people to browse several restaurants available, see the offered dishes and ingredients in depth. All this done in order to make them feel safer about the quality of what they will eat, without the risk of feel sick. To achieve this, a focus on the ingredients provenience, as well as quality and safety of the offered products was considered inside the application.
+                 The project was made with the React framework, using React Bootstrap for styling and NodeJs as runtime environment."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Human-Computer-Interaction-Project" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-software tilt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/db.png"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/projects/db.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="The objective is to design a database to store information on the process of integration of refugees, carried out through the promotion of projects, with the aim of offering accommodation, services and courses. It is supposed to be a database managed by the EU and used by web applications for local authorities and visitors with different functions."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Database-Design" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-software tilt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/aml.png"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/projects/aml.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="Project of the Advanced Machine Learning course, made in python with the VsCode IDE.
+                 The goal of the project was to address the domain shift problem, where the accuracy of the model significantly drops when other domain with different data distribution were involved. For this reason, techniques like UDA (unsupervised domain adaptation) have been used and implemented (by leveraging on the Activation Shaping Hook) in order to cope with this problem.
+                 The project was made with the Pytorch framework, using resnet18 with pretrained weights as base architecture, and both the VsCode IDE and Google Colab as runtime environments."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Activation-Shaping-AML" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Manca WA2 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-software tilt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/aml.png"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/projects/aml.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="Project of the Advanced Machine Learning course, made in python with the VsCode IDE.
+                 The goal of the project was to address the domain shift problem, where the accuracy of the model significantly drops when other domain with different data distribution were involved. For this reason, techniques like UDA (unsupervised domain adaptation) have been used and implemented (by leveraging on the Activation Shaping Hook) in order to cope with this problem.
+                 The project was made with the Pytorch framework, using resnet18 with pretrained weights as base architecture, and both the VsCode IDE and Google Colab as runtime environments."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Activation-Shaping-AML" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Manca PORTFOLIO -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web tilt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/portfolio.png"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/projects/portfolio.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                title="The project of this website. It is based on a Template and shows information and career of Gaetano Roberto"><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Portfolio" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Manca LAVORO TESI Magistrale-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app tilt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/aml.png"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/projects/aml.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="Project of the Advanced Machine Learning course, made in python with the VsCode IDE.
+                 The goal of the project was to address the domain shift problem, where the accuracy of the model significantly drops when other domain with different data distribution were involved. For this reason, techniques like UDA (unsupervised domain adaptation) have been used and implemented (by leveraging on the Activation Shaping Hook) in order to cope with this problem.
+                 The project was made with the Pytorch framework, using resnet18 with pretrained weights as base architecture, and both the VsCode IDE and Google Colab as runtime environments."><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Activation-Shaping-AML" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- Manca LAVORO TESI Triennale -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-software tilt">
+            <div class="portfolio-wrap">
+              <img src="assets/img/projects/planner.png"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/projects/planner.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox"
+                 title="The prototype is designed to have a different behaviour for users and for administrative users. For this reason it was 
+                 designed an initial authentication step, based on which it will be shown one interface instead of another. The employee can simply 
+                 Display the tasks to be carried out in a graphical interface that allows representation of the same in monthly and daily representation. The user 
+                 admin can access additional features. In fact, it has the ability to Add departments, indicating code and name, and activities, entering code, name, 
+                 the department to which it will be assigned and finally the total hours required to complete it. "><i class="fas fa-eye"></i> View</a>
+                <a href="https://github.com/GaetanoRoberto/Planner" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- PER LE FOTO USA IL PROGETTO SU CANVA per immagini 1650 x 859 -->
         </div>
-
       </div>
+
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="projects" class="resume">
-      <div class="container">
 
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
-        </div>
+    
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
 
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Alex Smith</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and
-                  developing user-centered digital/print marketing material from initial concept to final, polished
-                  deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui
-                ut dignissimos deleniti nerada porti sand markend</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius
-                unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart
-                dila</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production
-                  communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
-                  project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
-                  design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
-                  advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/img/contact1.png" alt="">
       </div>
-    </section><!-- End Resume Section -->
-
-      <!-- experience section starts -->
-
-      <section id="experience" class="experience">
- 
-        <h2 class="heading"><i class="bi bi-briefcase"></i> Experience </h2>
-
-        <div class="timeline">
-      
-          <div class="container right">
-            <div class="content">
-              <div class="tag">
-                <h2>Self Employed</h2>
-              </div>
-              <div class="desc">
-                  <h3>Full Stack Developer</h3>
-                  <p>Oct 2021 - present</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="container left">
-            <div class="content">
-              <div class="tag">
-                <h2>Mapstreak Flyseas</h2>
-              </div>
-              <div class="desc">
-                  <h3>Web Developer | Internship</h3>
-                  <p>June 2021 - Dec 2021</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="container right">
-            <div class="content">
-              <div class="tag">
-                <h2>The Spark Foundation</h2>
-              </div>
-              <div class="desc">
-                  <h3>Website Developer | Internship</h3>
-                  <p>May 2021 - June 2021</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="container left">
-            <div class="content">
-              <div class="tag">
-                <h2>The Spark Foundation</h2>
-              </div>
-              <div class="desc">
-                  <h3>Mobile Application Developer | Internship</h3>
-                  <p>April 2021 - May 2021</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="container right">
-            <div class="content">
-              <div class="tag">
-                <h2>Frshr Technologies</h2>
-              </div>
-              <div class="desc">
-                  <h3>Wordpress Developer | Internship</h3>
-                  <p>April 2021 - April 2021</p>
-              </div>
-            </div>
-          </div>
-      
-          <div class="container left">
-            <div class="content">
-              <div class="tag">
-                <h2>WonderingBlog</h2>
-              </div>
-              <div class="desc">
-                  <h3>Web Development & SEO | Internship</h3>
-                  <p>March 2021 - April 2021</p>
-              </div>
-            </div>
-          </div>
+    <form id="contact-form" onsubmit="return validateForm()">
+      <div class="form-group">
+        <div class="field">
+          <input type="text" name="name" id="name" placeholder="Name" required>
+          <i class="fas fa-user"></i>
+        </div>
+        <div>
+          <small class="error-message" id="name-error"></small>
         </div>
       
-        <div class="morebtn">
-          <a href="/experience" class="btn"><span>View All</span>
-            <i class="bi bi-arrow-right"></i>
-        </a>
+        <div class="field">
+          <input type="text" name="email" id="email" placeholder="Email" required>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div>
+          <small class="error-message" id="email-error"></small>
         </div>
       
+        <div class="message">
+          <textarea placeholder="Message" id="message" name="message" required></textarea>
+          <i class="fas fa-comment-dots"></i>
+        </div>
+        <div>
+          <small class="error-message" id="message-error"></small>
+        </div>
       </div>
-      
-      </section>
-      <!-- End experience Section -->
-
-
-
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-              occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-              voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-              soluta nobis est eligendi</p>
-          </div>
-        </div>
-
+      <div class="button-area">
+        <button type="submit" onclick="sendMail()">Submit <i class="fa fa-paper-plane"></i></button>
       </div>
-    </section><!-- End Services Section -->
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->
+<div id="riconoscimenti">
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
+  <div id="inner">
+    <h3>Acknowledgements <i id="chiudi" class="bi bi-x"></i></h3>
+    <ul>
+      <li><a href="https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/" title="Template" target="_blank">Template</a></li>
+      <li><a href="https://github.com/jigar-sable" title="Template 2" target="_blank">Template 2</a></li>
+      <li><a href="https://getbootstrap.com/" title="Bootstrap" target="_blank">Bootstrap</a></li>
+      <li><a href="https://github.com/t4t5/sweetalert" title="SweetAlert" target="_blank">SweetAlert</a></li>
+    </ul>
+  </div>
 
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
-                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-
-  </main><!-- End #main -->
+</div>
+  </main>
+  <!-- End #main -->
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
       <div class="copyright">
         &copy; <span id="year"></span><span> Gaetano Roberto</span>
+        <span class="credits-link"> | <span>CREDITS</span></span>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -930,13 +811,13 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script type="module" src="functions.js"></script>
+  <script src="functions.js"></script>
   
+
+
 </body>
 
 </html>
