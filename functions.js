@@ -83,7 +83,7 @@ function validateForm() {
       isValid = false;
     }
     if (recaptcha.length === 0 && isValid) {
-        alert("Please verify that you are not a robot.");
+        messageError.innerText = "Please verify that you are not a robot.";
         isValid = false;
     }
     return isValid; // Invia il form solo se valido
@@ -91,6 +91,8 @@ function validateForm() {
   
   
 function sendMail() {
+    event.preventDefault(); // Previene il refresh della pagina
+
     if (validateForm()) {
     var params = {
         name: document.getElementById("name").value,
