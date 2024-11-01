@@ -47,7 +47,8 @@ function validateForm() {
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const message = document.getElementById("message");
-  
+    const recaptcha = grecaptcha.getResponse();
+
     const nameError = document.getElementById("name-error");
     const emailError = document.getElementById("email-error");
     const messageError = document.getElementById("message-error");
@@ -81,7 +82,10 @@ function validateForm() {
       message.classList.add("error-border");
       isValid = false;
     }
-  
+    if (recaptcha.length === 0 && isValid) {
+        alert("Please verify that you are not a robot.");
+        isValid = false;
+    }
     return isValid; // Invia il form solo se valido
   }
   
