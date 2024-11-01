@@ -171,16 +171,16 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 });
 // <!-- tilt js effect ends -->
 
-/* ===== SCROLL REVEAL ANIMATION ===== */
-const srtop = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 1000,
-    reset: false
-});
+// /* ===== SCROLL REVEAL ANIMATION ===== */
+// const srtop = ScrollReveal({
+//     origin: 'top',
+//     distance: '80px',
+//     duration: 1000,
+//     reset: false
+// });
 
-/* SCROLL PROJECTS */
-srtop.reveal('.portfolio-item', { interval: 200 });
+// /* SCROLL PROJECTS */
+// srtop.reveal('.portfolio-item', { interval: 200 });
 
 
 // disable developer mode
