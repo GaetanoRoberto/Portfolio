@@ -610,6 +610,7 @@ form .form-group {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 .form-group .field {
   height: 50px;
@@ -653,6 +654,11 @@ form .message textarea {
   color: rgb(115, 3, 167);
 }
 form .message {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+form .g-recaptcha {
   position: relative;
   margin: 1rem;
   width: 100%;
@@ -712,9 +718,9 @@ form .button-area {
 /* Stile per i messaggi di errore */
 .error-message {
   color: red;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding-left: 47px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 /* Stile per i campi con errore */
